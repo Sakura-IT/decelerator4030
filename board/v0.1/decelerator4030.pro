@@ -1,4 +1,4 @@
-update=Sun 07 Sep 2014 11:41:43 PM CEST
+update=Wed 10 Sep 2014 04:57:15 PM CEST
 version=1
 last_client=eeschema
 [cvpcb]
@@ -87,3 +87,8 @@ LibName30=valves
 LibName31=xilinx-cplds
 LibName32=amiga
 LibName33=xtal-generic
+LibName34=alliance
+LibName35=spansion
+LibName36=mcp
+LibName37=digilent
+LibName38=maxim
