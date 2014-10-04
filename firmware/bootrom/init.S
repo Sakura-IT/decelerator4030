@@ -8,7 +8,7 @@
 
 	section		"init",code
 
-	dc.w		$1114
+	dc.w		$1111
 	jmp		$F00008			; this MUST be here 
 init:						; $F00008
 	move.l		#$020000,d0		; delay
