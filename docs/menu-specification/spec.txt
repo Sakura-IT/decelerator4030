@@ -1,0 +1,18 @@
+Menu konfiguracyjne karty Decelerator 4030
+
+Główny ekran:
+Na górze logo Decelerator 4030, poniżej na środku wylistowane opcje do wyboru, lub nazwy podmenu w które można wejść. Po menu można poruszać się klawiaturą, strzałkami. Enter albo spacja przechodzi do kolejnego podmenu, lub pozwala na zmianę danej opcji. Najechanie na daną opcje powoduje jej podświetlenie.
+
+Na dole głównego ekranu informacja o zainstalowanym procesorze, oraz ilości Fast RAM na karcie. W linii poniżej informacja o wersji boot ROMu oraz wersji firmware w CPLD.
+
+Podmenu mogą być prostsze, w sensie braku logo na górze oraz stopki z informacją o procesorze, pamięci i wersji. 
+
+W założeniu, pewne ustawienia będą przechowywane we flashu (poświęcimy na to jeden sektor). Więc program podczas startu będzie musiał odczytać te ustawienia (i wyświetlić je w menu), a gdy użytkownik wybierze opcje save, będzie musiał je zapisać. Jak to zaimplementować dokładnie to sprawa na później.
+
+Jednym z takich ustawień z pewnością będzie wybór rozdzielczości dla menu. Sporo osób ma monitory VGA, więc trzeba będzie dać opcję wyświetlania menu w rozdziałce kompatybilnej z tymi monitorami. Proponuję, aby standardową rozdzielczością był PAL Hi-Res Laced (640x512), z możliwością zmiany do Euro72 (640x400). Wtedy możemy przyjąć, że menu ma zawsze rozmiar 640x400, tylko w przypdaku PALu jest wyświetlane na ekranie o rozmiarze 640x512. Być może wejście do menu w trybie Euro72 powinno być też możliwe pod osobnym klawiszem. Np. normalnie do menu wchodzi ESC, ale przytrzymanie F1 wchodzi w trybie Euro72 niezależnie od zapisanych ustawień. Byłoby to przydatne dla użytkowników, którzy mają różne monitory, bądź często przełączają Amigę.
+
+Pod menu może wyświetlać się jakaś prosta animacja (generowana proceduralnie). 
+
+Kod startowy powinien też udostępniać opcję debugowania przez port szeregowy (co może się przydać choćby podczas developowania samego menu na prawdziwej Amidze). 
+
+Wydaje mi się, że wszystko oprócz krytycznego kodu startowego (który musi być w asmie), mogłoby zostać tak na prawdę napisane w C.
