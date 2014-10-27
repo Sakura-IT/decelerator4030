@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 2014-09-18 08:05:24
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 2014-10-19 21:17:35
 
 BeginCmp
 TimeStamp = /540E5857;
@@ -200,6 +200,34 @@ BeginCmp
 TimeStamp = /5418E9C2;
 Reference = C29;
 ValeurCmp = 220pF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /5444035C;
+Reference = C30;
+ValeurCmp = 100nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /54440356;
+Reference = C31;
+ValeurCmp = 100nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /54440350;
+Reference = C32;
+ValeurCmp = 100nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /54440362;
+Reference = C33;
+ValeurCmp = 100nF;
 IdModule  = SM0603_Capa;
 EndCmp
 
@@ -465,8 +493,15 @@ EndCmp
 BeginCmp
 TimeStamp = /54187F3D;
 Reference = U18;
-ValeurCmp = MC68030FE_PGA;
+ValeurCmp = MC68030RC_PGA;
 IdModule  = MC68030;
+EndCmp
+
+BeginCmp
+TimeStamp = /5443FECF;
+Reference = U19;
+ValeurCmp = XC9536XL-5PCG44C;
+IdModule  = VQFP44;
 EndCmp
 
 EndListe
