@@ -1,0 +1,25 @@
+NET "ma<24>" LOC = "3";
+NET "ma<25>" LOC = "2";
+NET "ma<26>" LOC = "1";
+NET "a<19>" LOC = "5";
+NET "a<20>" LOC = "6";
+NET "a<21>" LOC = "7";
+NET "a<22>" LOC = "8";
+NET "a<23>" LOC = "12";
+NET "a<24>" LOC = "13";
+NET "a<25>" LOC = "14";
+NET "a<26>" LOC = "16";
+NET "a<27>" LOC = "18";
+NET "a<28>" LOC = "19";
+NET "a<29>" LOC = "20";
+NET "a<30>" LOC = "21";
+NET "a<31>" LOC = "22";
+NET "clkcpu" LOC = "44";
+NET "clklogic" LOC = "43";
+NET "mapen" LOC = "39";
+NET "bgack" LOC = "42";
+NET "rw" LOC = "41";
+NET "reset" LOC = "33";
+NET "as" LOC = "40";
+NET "ecs" LOC = "38";
+
