@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 2014-10-19 21:17:35
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 2015-01-05 03:23:30
 
 BeginCmp
 TimeStamp = /540E5857;
@@ -225,8 +225,50 @@ IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
-TimeStamp = /54440362;
+TimeStamp = /54A9F50C;
 Reference = C33;
+ValeurCmp = 100nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA090C;
+Reference = C34;
+ValeurCmp = 100nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA0912;
+Reference = C35;
+ValeurCmp = 100nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA0918;
+Reference = C36;
+ValeurCmp = 100nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA091E;
+Reference = C37;
+ValeurCmp = 100nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA0E66;
+Reference = C38;
+ValeurCmp = 100nF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AA0E6C;
+Reference = C39;
 ValeurCmp = 100nF;
 IdModule  = SM0603_Capa;
 EndCmp
@@ -498,10 +540,17 @@ IdModule  = MC68030;
 EndCmp
 
 BeginCmp
-TimeStamp = /5443FECF;
+TimeStamp = /54458EEA;
 Reference = U19;
-ValeurCmp = XC9536XL-5PCG44C;
+ValeurCmp = XC9536XL-5VQG44C;
 IdModule  = VQFP44;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A9F4F4;
+Reference = U20;
+ValeurCmp = MCP9801;
+IdModule  = MSOP-8;
 EndCmp
 
 EndListe
