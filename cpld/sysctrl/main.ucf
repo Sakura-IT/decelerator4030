@@ -1,0 +1,140 @@
+# Data bus
+NET "D<31>"	LOC = "140";
+NET "D<30>"	LOC = "139";
+NET "D<29>"	LOC = "138";
+NET "D<28>"	LOC = "138";
+NET "D<27>"	LOC = "136";
+NET "D<26>"	LOC = "135";
+NET "D<25>"	LOC = "134";
+NET "D<24>"	LOC = "133";	
+
+# PGA/QFP CPU selection
+NET "PGA_QFP"	LOC = "129";	# PGA/QFP jumper
+NET "BG_PGA"	LOC = "131";
+NET "BG_QFP"	LOC = "126";
+NET "BGACK_PGA" LOC = "130";
+NET "BGACK_QFP" LOC = "132";
+
+# misc jumpers
+NET "NO_FLASH"	LOC = "128";	# flash disable jumper
+
+# LEDs
+NET "LED_D2"	LOC = "118";
+NET "LED_D1"	LOC = "119";
+
+# Address bus
+NET "A<31>"	LOC = "43";
+NET "A<30>"	LOC = "44";
+NET "A<29>"	LOC = "45";
+NET "A<28>"	LOC = "46";
+NET "A<27>"	LOC = "48";
+NET "A<26>"	LOC = "41";	# MA26
+NET "A<25>"	LOC = "40";	# MA25
+NET "A<24>"	LOC = "39";	# MA24
+NET "A<23>"	LOC = "49";
+NET "A<22>"	LOC = "50";
+NET "A<21>"	LOC = "52";
+NET "A<20>"	LOC = "53";
+NET "A<19>"	LOC = "56";
+NET "A<18>"	LOC = "51";
+NET "A<17>"	LOC = "59";
+NET "A<16>"	LOC = "54";
+NET "A<15>"	LOC = "64";
+NET "A<14>"	LOC = "58";
+NET "A<13>"	LOC = "68";
+NET "A<12>"	LOC = "61";
+NET "A<11>"	LOC = "57";
+NET "A<10>"	LOC = "70";
+NET "A<9>"	LOC = "60";
+NET "A<8>"	LOC = "34";
+NET "A<7>"	LOC = "33";
+NET "A<6>"	LOC = "66";
+NET "A<5>"	LOC = "69";
+NET "A<4>"	LOC = "71";
+NET "A<3>"	LOC = "15";
+NET "A<2>"	LOC = "14";
+NET "A<1>"	LOC = "13";
+NET "A<0>"	LOC = "11";
+
+# I2C chip interface
+NET "I2C_INT"	LOC = "125";
+NET "I2C_CE"	LOC = "124";
+NET "I2C_RD"	LOC = "121";
+NET "I2C_WR"	LOC = "120";
+
+# Misc CPLD 
+NET "RESET_CPLD" LOC = "117";
+
+# Clocks
+NET "CLK68030"	LOC = "38";	# CPU clock
+NET "CLKEXP"	LOC = "32";	# Main board clock
+NET "CLKLOGIC"	LOC = "30";	# CPLD main clock
+
+# 68030 CPU bus control signals
+NET "DSACK0"	LOC = "16";
+NET "DSACK1"	LOC = "12";
+NET "STERM"	LOC = "10";
+NET "BERR"	LOC = "9";
+NET "HLT"	LOC = "7";
+NET "CBACK"	LOC = "6";
+NET "CBREQ"	LOC = "5";
+NET "DS"	LOC = "3";
+NET "SIZ1"	LOC = "2";
+NET "AS"	LOC = "4";
+NET "RESET"	LOC = "143";
+NET "SIZ0"	LOC = "142";
+NET "OCS"	LOC = "27";
+NET "ECS"	LOC = "24";
+NET "BG"	LOC = "22";
+NET "BR"	LOC = "19";
+NET "BGACK"	LOC = "25";
+NET "RMC"	LOC = "17";	# ?
+NET "R_W"	LOC = "23";
+
+# Additional local bus slot control signals
+NET "RAMSLOT"	LOC = "35";
+NET "MAPEN"	LOC = "28";
+NET "WAIT"	LOC = "31"
+NET "SBR"	LOC = "21";
+NET "INT2"	LOC = "20";
+
+# Internal address bus for RAM and Flash 
+NET "ARM<21>"	LOC = "110";
+NET "ARM<20>"	LOC = "91";
+NET "ARM<19>"	LOC = "101";
+NET "ARM<18>"	LOC = "102";
+NET "ARM<17>"	LOC = "103";
+NET "ARM<16>"	LOC = "112";
+NET "ARM<15>"	LOC = "92";
+NET "ARM<14>"	LOC = "93";
+NET "ARM<13>"	LOC = "94";
+NET "ARM<12>"	LOC = "95";
+NET "ARM<11>"	LOC = "96";
+NET "ARM<10>"	LOC = "97";
+NET "ARM<9>"	LOC = "98";
+NET "ARM<8>"	LOC = "100";
+NET "ARM<7>"	LOC = "104";
+NET "ARM<6>"	LOC = "105";
+NET "ARM<5>"	LOC = "106";
+NET "ARM<4>"	LOC = "107";
+NET "ARM<3>"	LOC = "116";
+NET "ARM<2>"	LOC = "115";
+NET "ARM<1>"	LOC = "113";
+NET "ARM<0>"	LOC = "111";
+
+# Internal bus control signals
+NET "FLASH_HI_CE" LOC = "88";
+NET "FLASH_BUSY" LOC = "83";
+NET "FLASH_LO_CE" LOC = "87";
+NET "FLASH_OE"	LOC = "86";
+NET "FLASH_WE"	LOC = "85";
+NET "SRAM_OE"	LOC = "81";
+NET "SRAM_WE"	LOC = "82";
+NET "SRAM_HI_CE" LOC = "79";
+NET "SRAM_LO_CE" LOC = "80";
+NET "IDBUS_DIR"	LOC = "78";
+NET "IDBUS_UUB" LOC = "77";
+NET "IDBUS_ULB" LOC = "76";
+NET "IDBUS_LUB" LOC = "75";
+NET "IDBUS_LLB" LOC = "74";
+
