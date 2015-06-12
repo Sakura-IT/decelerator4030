@@ -94,7 +94,7 @@ NET "R_W"	LOC = "23";
 # Additional local bus slot control signals
 NET "RAMSLOT"	LOC = "35";
 NET "MAPEN"	LOC = "28";
-NET "WAIT"	LOC = "31"
+NET "AWAIT"	LOC = "31"
 NET "SBR"	LOC = "21";
 NET "INT2"	LOC = "20";
 
