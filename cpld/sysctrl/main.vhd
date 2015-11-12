@@ -7,10 +7,10 @@ ENTITY main IS
 		NO_FLASH : IN STD_LOGIC;			-- flash disable jumper
 
 		PGA_QFP : IN STD_LOGIC;				-- PGA/QFP jumper
-		BG_PGA : INOUT STD_LOGIC;			-- bus grant PGA		XXX
-		BG_QFP : INOUT STD_LOGIC;			-- bus grant QFP		XXX
-		BGACK_PGA : INOUT STD_LOGIC;			-- bus grant acknowledge PGA	XXX
-		BGACK_QFP : INOUT STD_LOGIC;			-- bus grant acknowledge QFP	XXX
+		BG_PGA : IN STD_LOGIC;				-- bus grant PGA		XXX
+		BG_QFP : IN STD_LOGIC;				-- bus grant QFP		XXX
+		BGACK_PGA : OUT STD_LOGIC;			-- bus grant acknowledge PGA	XXX
+		BGACK_QFP : OUT STD_LOGIC;			-- bus grant acknowledge QFP	XXX
 
 		LED_D1 : OUT STD_LOGIC;
 		LED_D2 : OUT STD_LOGIC;
@@ -19,7 +19,7 @@ ENTITY main IS
 		CLKLOGIC : IN STD_LOGIC;			-- Logic clock
 		CLKEXP : IN STD_LOGIC;				-- Main board clock
 
-		DSASK0 : OUT STD_LOGIC;
+		DSACK0 : OUT STD_LOGIC;
 		DSACK1 : OUT STD_LOGIC;
 		STERM : OUT STD_LOGIC;				-- synchronous cycle termination
 		BERR : OUT STD_LOGIC;				-- bus error
@@ -33,7 +33,7 @@ ENTITY main IS
 		RESET : IN STD_LOGIC;
 		OCS : IN STD_LOGIC;
 		ECS : IN STD_LOGIC;
-		BG : IN STD_LOGIC;
+		BG : OUT STD_LOGIC;
 		BR : IN STD_LOGIC;
 		BGACK : IN STD_LOGIC;
 		RMC : IN STD_LOGIC;
@@ -69,23 +69,30 @@ ENTITY main IS
 	
 		ARM : OUT STD_LOGIC_VECTOR(21 downto 0);		-- internal address bus	
 		A : IN STD_LOGIC_VECTOR(31 downto 0);		-- CPU address bus 
-		D : INOUT STD_LOGIC_VECTOR(7 downto 0) );	-- CPU data lines, in fact 31-24
+		D : INOUT STD_LOGIC_VECTOR(31 downto 24) );	-- CPU data lines, in fact 31-24
 		   
 END main;
 
 ARCHITECTURE behavioral OF main IS
 
-
--- signal foo : STD_LOGIC;
+signal sig_cpu_bgack : STD_LOGIC;	-- BGACK from Amiga to CPU
+signal sig_cpu_bg : STD_LOGIC;		-- BG from CPU to Amiga
 
 BEGIN
 
+	sig_cpu_bgack <= BGACK;
+	sig_cpu_bg <= BG_QFP;
+
+	BGACK_QFP <= sig_cpu_bgack;
+	BG <= sig_cpu_bg;
+
+	INT2 <= 'Z';
 	LED_D1 <= '0';
 	LED_D2 <= '1';
 
-	IDBUS_DIR <= 'Z'
+	IDBUS_DIR <= 'Z';
 
-	ARM <= "ZZZZZZZZZZZZZZZZZZZZZ";
+	ARM <= "ZZZZZZZZZZZZZZZZZZZZZZ";
 	D <= "ZZZZZZZZ";
 
 END behavioral;
