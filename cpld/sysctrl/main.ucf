@@ -2,14 +2,14 @@
 NET "D<31>"	LOC = "140";
 NET "D<30>"	LOC = "139";
 NET "D<29>"	LOC = "138";
-NET "D<28>"	LOC = "138";
+NET "D<28>"	LOC = "137";
 NET "D<27>"	LOC = "136";
 NET "D<26>"	LOC = "135";
 NET "D<25>"	LOC = "134";
 NET "D<24>"	LOC = "133";	
 
 # PGA/QFP CPU selection
-NET "PGA_QFP"	LOC = "129";	# PGA/QFP jumper
+NET "PGA_QFP_SEL" LOC = "129";	# PGA/QFP jumper
 NET "BG_PGA"	LOC = "131";
 NET "BG_QFP"	LOC = "126";
 NET "BGACK_PGA" LOC = "130";
