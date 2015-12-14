@@ -30,13 +30,15 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:xilinx-cplds
-LIBS:amiga
 LIBS:xtal-generic
 LIBS:alliance
 LIBS:spansion
 LIBS:mcp
 LIBS:digilent
 LIBS:maxim
+LIBS:68k
+LIBS:amiga
+LIBS:issi
 LIBS:decelerator4030-cache
 EELAYER 27 0
 EELAYER END
@@ -44,7 +46,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "Decelerator4030"
-Date "26 aug 2015"
+Date "14 dec 2015"
 Rev "0.2"
 Comp ""
 Comment1 ""
@@ -7062,4 +7064,31 @@ Wire Wire Line
 Connection ~ 22450 5550
 Connection ~ 22300 6100
 Connection ~ 22600 6100
+Text GLabel 10800 4750 3    39   Output ~ 0
+_FPUCS
+Wire Wire Line
+	10800 4750 10800 4150
+Text GLabel 12450 6100 0    39   Input ~ 0
+_FPUCS
+Text GLabel 13650 6100 2    60   BiDi ~ 0
+_BERR
+$Comp
+L DIODE D4
+U 1 1 5664D580
+P 13050 6100
+F 0 "D4" H 13050 6200 40  0000 C CNN
+F 1 "1N4148" H 13050 6000 40  0000 C CNN
+F 2 "~" H 13050 6100 60  0000 C CNN
+F 3 "~" H 13050 6100 60  0000 C CNN
+	1    13050 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12450 6100 12850 6100
+Wire Wire Line
+	13250 6100 13650 6100
+Text GLabel 6300 6250 1    39   Input ~ 0
+_CIIN
+Wire Wire Line
+	6300 6250 6300 6550
 $EndSCHEMATC
